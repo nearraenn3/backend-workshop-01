@@ -6,19 +6,19 @@ public class CircularBuffer {
     private int readPointer;
 
     public boolean isEmpty() {
-        return bufferSize == 10;
+        return spaceInBuffer == 10;
     }
 
     public void writeData(String input) {
-        bufferSize--;
-        if (writePointer == spaceInBuffer ) {
+        spaceInBuffer--;
+        if (writePointer == bufferSize ) {
             writePointer = 0;
         }
         this.buffer[writePointer++] = input;
     }
 
     public boolean isFull() {
-        return bufferSize==0;
+        return spaceInBuffer==0;
     }
 
     public String readData() {
