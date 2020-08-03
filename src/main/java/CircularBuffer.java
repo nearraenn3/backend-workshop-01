@@ -24,4 +24,10 @@ public class CircularBuffer {
     public String readData() {
         return this.buffer[readPointer++];
     }
+
+    public void createBuffer(int numberOfSize) {
+        bufferSize = numberOfSize;
+        spaceInBuffer = numberOfSize;
+        buffer = new String[numberOfSize];
+    }
 }
