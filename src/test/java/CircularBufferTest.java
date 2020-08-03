@@ -34,8 +34,23 @@ public class CircularBufferTest {
         for(int i=0; i<10; i++) {
             cb.writeData("A" + i);
         }
-        cb.writeData("B");
-        assertEquals("B", cb.readData());
+        cb.writeData("Near");
+        assertEquals("Near", cb.readData());
     }
-
+    @Test
+    public void create_new_buffer_with_default_size_but_write_nine_times_should_not_full() {
+        CircularBuffer cb = new CircularBuffer();
+        for(int i=0; i<9; i++) {
+            cb.writeData("A" + i);
+        }
+        assertFalse("Full", cb.isFull());
+    }
+    @Test
+    public void create_new_buffer_with_default_size_but_write_three_times_should_not_empty() {
+        CircularBuffer cb = new CircularBuffer();
+        for(int i=0; i<3; i++) {
+            cb.writeData("A" + i);
+        }
+        assertFalse("Empty", cb.isEmpty());
+    }
 }

@@ -23,3 +23,5 @@
 * TC02 => สร้าง buffer ที่ใส่ค่าเข้าไปจนเต็ม
 * TC03 => เมื่อเขียนค่า "A" และ "B" ควรจะอ่านได้ค่า "A" และ "B"
 * TC04 => create_new_buffer_with_default_size_and_write_again_should_read_this
+* TC05 => create_new_buffer_with_default_size_but_write_nine_times_should_not_full
+* TC06 => create_new_buffer_with_default_size_but_write_three_times_should_not_empty
