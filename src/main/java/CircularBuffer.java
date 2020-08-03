@@ -1,5 +1,6 @@
 public class CircularBuffer {
-    private int bufferSize = 10;
+    private int bufferSize=10;
+    private int spaceInBufferSize=10;
     private String[] buffer = new String[10];
     private int writePointer;
     private int readPointer;
@@ -10,6 +11,9 @@ public class CircularBuffer {
 
     public void writeData(String input) {
         bufferSize--;
+        if (writePointer == spaceInBufferSize ) {
+            writePointer = 0;
+        }
         this.buffer[writePointer++] = input;
     }
 

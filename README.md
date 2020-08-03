@@ -19,4 +19,7 @@
 + write pointer = 0
 
 ### List of test cases
-* TC01 => 3 test cases ที่พี่พาทำ (1 commit)
+* TC01 => สร้าง buffer ใหม่ที่ว่างเปล่า
+* TC02 => สร้าง buffer ที่ใส่ค่าเข้าไปจนเต็ม
+* TC03 => เมื่อเขียนค่า "A" และ "B" ควรจะอ่านได้ค่า "A" และ "B"
+* TC04 => create_new_buffer_with_default_size_and_write_again_should_read_this
