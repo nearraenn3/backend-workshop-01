@@ -25,3 +25,4 @@
 * TC04 => create_new_buffer_with_default_size_and_write_again_should_read_this
 * TC05 => create_new_buffer_with_default_size_but_write_nine_times_should_not_full
 * TC06 => create_new_buffer_with_default_size_but_write_three_times_should_not_empty
+* TC07 => can_write_in_buffer_that_have_size_equal_to_ten_more_than_ten_times

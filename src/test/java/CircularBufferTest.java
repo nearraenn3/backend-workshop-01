@@ -53,4 +53,12 @@ public class CircularBufferTest {
         }
         assertFalse("Empty", cb.isEmpty());
     }
+    @Test
+    public void can_write_in_buffer_that_have_size_equal_to_ten_more_than_ten_times() {
+        CircularBuffer cb = new CircularBuffer();
+        for(int i=0; i<20; i++) {
+            cb.writeData("A");
+        }
+        assertEquals("A", cb.readData());
+    }
 }
