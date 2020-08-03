@@ -4,6 +4,6 @@ public class HelloWorld {
         return "Hello World";
     }
     public String sayHi(String name) {
-        return "Hello " + name.substring(0,1).toUpperCase() + name.substring(1,name.length());
+        return "Hello " + name.substring(0,1).toUpperCase() + name.substring(1);
     }
 }
