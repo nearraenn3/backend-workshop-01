@@ -11,7 +11,7 @@
 + isFull(): boolean
 + isEmpty(): boolean
 
-+ setSize(int): void
++ createBuffer(int): void
 
 ### 3. Internal process ?
 + buffer size = 10 (default)
