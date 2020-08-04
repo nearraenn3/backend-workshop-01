@@ -18,7 +18,7 @@
 + read pointer = 0
 + write pointer = 0
 
-### List of test cases
+## List of test cases
 * TC01 => สร้าง buffer ใหม่ที่ว่างเปล่า
 * TC02 => สร้าง buffer ที่ใส่ค่าเข้าไปจนเต็ม
 * TC03 => เมื่อเขียนค่า "A" และ "B" ควรจะอ่านได้ค่า "A" และ "B"
@@ -27,3 +27,6 @@
 * TC06 => create_new_buffer_with_default_size_but_write_three_times_should_not_empty
 * TC07 => can_write_in_buffer_that_have_size_equal_to_ten_more_than_ten_times
 * TC08 => create_buffer_and_identify_its_size_equal_to_15
+
+## Refactor
+* 1 => มี case เยอะ มีความซับซ้อน
