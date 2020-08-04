@@ -5,6 +5,7 @@ public class CircularBuffer {
     private int writePointer;
     private int readPointer;
 
+
     public boolean isEmpty() {
         return spaceInBuffer == 10;
     }
