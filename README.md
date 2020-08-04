@@ -30,3 +30,14 @@
 
 ## Refactor
 * 1 => มี case เยอะ มีความซับซ้อน
+
+## Refactor 02
+* 1 => กำหนด String[] textScores = {"Love", "Fifteen", "Thirty", "Forty"}; ขึ้นมาและนำไปใช้กับกรณีต่างๆ
+* 2 => แก้กรณีแต้มเสมอกันก่อน Deuce และ กรณี Deuce
+* 3 => แก้ Normal case โดยลดการใช้ if ดึงค่าจากข้อ 1 มาใช้
+* 4 => สลับที่เพื่อเช็คว่าถ้าเคสไหนชึ้นก่อนจะมีปัญหาไหม
+* 5 => เพิ่ม condition ให้กรณี Advantage เพื่อให้ครอบคลุมทั้งหมด
+* 6 => set final string to player1Name and player2Name
+* 7 => Delete some condition on isDeuce because it always true
+
+
